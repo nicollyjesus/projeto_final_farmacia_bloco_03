@@ -20,15 +20,18 @@ function Navbar() {
             >
               Home
             </Link>
-            <a 
-              href="#" 
+            <Link 
+              to="/categorias" 
               className="hover:text-green-200 transition-colors font-medium"
             >
               Categorias
-            </a>
-            <button className="bg-teal-600 hover:bg-teal-700 px-6 py-2 rounded-full font-medium transition-colors">
+            </Link>
+            <Link 
+              to="/cadastroCategoria"
+              className="bg-teal-600 hover:bg-teal-700 px-6 py-2 rounded-full font-medium transition-colors"
+            >
               Nova Categoria
-            </button>
+            </Link>
           </div>
 
           {/* Menu Mobile */}

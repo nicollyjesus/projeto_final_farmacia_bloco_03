@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { FirstAidKit, Heart, ShieldCheck } from '@phosphor-icons/react';
 
 function Home() {
@@ -18,13 +19,19 @@ function Home() {
           </p>
 
           <div className="flex gap-4 mt-8">
-            <button className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105">
+            <Link 
+              to="/categorias"
+              className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105"
+            >
               <FirstAidKit size={24} weight="fill" />
               Ver Categorias
-            </button>
-            <button className="flex items-center gap-2 bg-transparent border-2 border-green-600 hover:bg-green-50 text-green-700 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105">
+            </Link>
+            <Link 
+              to="/cadastroCategoria"
+              className="flex items-center gap-2 bg-transparent border-2 border-green-600 hover:bg-green-50 text-green-700 px-8 py-4 rounded-full font-bold text-lg transition-all hover:scale-105"
+            >
               Cadastrar Categoria
-            </button>
+            </Link>
           </div>
         </div>
       </div>
